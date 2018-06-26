@@ -45,7 +45,7 @@ blocknode-cli masternode status
 
 ## Usage:
 ```
-bocknode-cli masternode status
+blocknode-cli masternode status
 blocknode-cli getinfo
 blocknode-cli mnsync status
 ```
