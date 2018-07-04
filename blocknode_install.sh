@@ -49,7 +49,7 @@ ExecStop=-$COIN_PATH$COIN_CLI -conf=$CONFIGFOLDER/$CONFIG_FILE -datadir=$CONFIGF
 
 Restart=always
 PrivateTmp=true
-TimeoutStopSec=60s`
+TimeoutStopSec=60s
 TimeoutStartSec=10s
 StartLimitInterval=120s
 StartLimitBurst=5
