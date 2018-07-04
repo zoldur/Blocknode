@@ -6,7 +6,7 @@ CONFIGFOLDER='/root/.blocknode'
 COIN_DAEMON='blocknoded'
 COIN_CLI='blocknode-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/blocknodetech/blocknode/releases/download/v1.4.15/blocknode-1.4.15-x86_64-linux-gnu.tar.gz'
+COIN_TGZ='https://github.com/blocknodetech/blocknode/releases/download/v1.5.1/blocknode-1.5.1-x86_64-linux-gnu.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Blocknode'
 COIN_PORT=37001
@@ -49,7 +49,7 @@ ExecStop=-$COIN_PATH$COIN_CLI -conf=$CONFIGFOLDER/$CONFIG_FILE -datadir=$CONFIGF
 
 Restart=always
 PrivateTmp=true
-TimeoutStopSec=60s
+TimeoutStopSec=60s`
 TimeoutStartSec=10s
 StartLimitInterval=120s
 StartLimitBurst=5
