@@ -3,7 +3,7 @@ Shell script to install a [Blocknode Masternode](https://blocknode.tech/) on a L
 Use it on your own risk.
 ***
 
-## VPS installation
+## VPS installation for version **1.5.2**
 ```
 wget -N https://raw.githubusercontent.com/zoldur/Blocknode/master/blocknode_install.sh
 bash blocknode_install.sh
@@ -59,9 +59,25 @@ systemctl is-enabled Blocknode #To check if Blocknode service is enabled on boot
 ```
 ***
 
+## Masternode update:
+In order to update your Blocknode Masternode to version 1.5.2, please run the following commands:
+```
+cd /tmp
+wget -N https://github.com/blocknodetech/blocknode/releases/download/v1.5.2/blocknode-1.5.2-x86_64-linux-gnu.tar.gz
+tar xvzf blocknode-1.5.2-x86_64-linux-gnu.tar.gz --strip 2
+systemctl stop Blocknode
+mv blocknoded blocknode-cli /usr/local/bin
+systemctl start Blocknode
+rm blocknode-1.5.2-x86_64-linux-gnu.tar.gz
+blocknode-cli getinfo
+```
+Open your desktop wallet and start the node from there.
+***
+
 ## Donations
 Any donation is highly appreciated
 
+**BND**: B7P5kBybyfHnc8pGE94fkKZxoh6QwkZjbF  
 **BTC**: 3MQLEcHXVvxpmwbB811qiC1c6g21ZKa7Jh  
 **ETH**: 0x26B9dDa0616FE0759273D651e77Fe7dd7751E01E  
 **LTC**: LNZpK4rCd1JVSB3rGKTAnTkudV9So9zexB
