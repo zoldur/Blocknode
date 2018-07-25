@@ -1,7 +1,6 @@
-# Blocknode - ## The future of rewards. https://blocknode.tech
+# [Blocknode](https://blocknode.tech) - The future of rewards.  
 
-Shell script to install a [Blocknode Masternode](https://blocknode.tech/) on a Linux server running Ubuntu 16.04.
-Use it on your own risk.
+Shell script to install a Blocknode Masternodeon a Linux server running Ubuntu 16.04. Use it on your own risk.
 ***
 
 ## VPS installation for version **1.5.2**
